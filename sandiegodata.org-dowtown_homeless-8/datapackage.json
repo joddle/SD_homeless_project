@@ -1,0 +1,191 @@
+{
+    "declare": "metatab-latest",
+    "title": "Downtown San Diego Homeless Sleepers",
+    "description": "Five years of monthly geographic positions for homeless sleepers in Downtown San Diego",
+    "identifier": "995fe60d-905a-47cd-885d-fd3f06df9121",
+    "name": "sandiegodata.org-dowtown_homeless-8",
+    "dataset": "dowtown_homeless",
+    "origin": "sandiegodata.org",
+    "time": null,
+    "space": null,
+    "grain": null,
+    "variant": null,
+    "version": "8",
+    "group": "homelessness",
+    "tag": [
+        "homelessness",
+        "san_diego"
+    ],
+    "modified": "2019-10-03T01:47:24",
+    "issued": "2019-10-03T01:47:24",
+    "giturl": "https://github.com/sandiegodata-projects/downtown-partnership.git",
+    "resources": [
+        {
+            "path": "data/neighborhood_totals.csv",
+            "name": "neighborhood_totals",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "date",
+                        "description": "Date of count. Only the month and year are significant.",
+                        "type": "date"
+                    },
+                    {
+                        "name": "east_village",
+                        "description": "Neighborhood count",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "city_center",
+                        "description": "Neighborhood count",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "columbia",
+                        "description": "Neighborhood count",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "marina",
+                        "description": "Neighborhood count",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "cortez",
+                        "description": "Neighborhood count",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "gaslamp",
+                        "description": "Neighborhood count",
+                        "type": "integer"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/monthly_totals.csv",
+            "name": "monthly_totals",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "date",
+                        "description": "Date of total. Only the year and month are significant",
+                        "type": "date"
+                    },
+                    {
+                        "name": "count",
+                        "description": "Total count",
+                        "type": "integer"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/homeless_counts.csv",
+            "name": "homeless_counts",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "neighborhood",
+                        "description": "Neighborhood, from the label on the source map",
+                        "type": "string"
+                    },
+                    {
+                        "name": "date",
+                        "description": "Date of the observation. Many dates have no know day of month; for these dates, the day of month is set to 1",
+                        "type": "date"
+                    },
+                    {
+                        "name": "type",
+                        "description": "Type of sleeper: individual, vehicle or structure",
+                        "type": "string"
+                    },
+                    {
+                        "name": "temp",
+                        "description": "Temperature, if it was written on the source map",
+                        "type": "number"
+                    },
+                    {
+                        "name": "rain",
+                        "description": "Rain or clear, if it was written on the source map",
+                        "type": "string"
+                    },
+                    {
+                        "name": "geoid",
+                        "description": "Census geoid for the 2010 Census block the observation is in, in ACS format",
+                        "type": "string"
+                    },
+                    {
+                        "name": "x",
+                        "description": "X geographic position, in California State Plane 6, EPSG:2230",
+                        "type": "number"
+                    },
+                    {
+                        "name": "y",
+                        "description": "Y geographic position, in California State Plane 6, EPSG:2230",
+                        "type": "number"
+                    },
+                    {
+                        "name": "geometry",
+                        "description": "Geographic position of observation, in Lat/Lon, EPSG:4326",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/imputed_counts.csv",
+            "name": "imputed_counts",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "neighborhood",
+                        "description": "Neighborhood, from the label on the source map",
+                        "type": "string"
+                    },
+                    {
+                        "name": "date",
+                        "description": "Date of the observation. Many dates have no know day of month; for these dates, the day of month is set to 1",
+                        "type": "datetime"
+                    },
+                    {
+                        "name": "type",
+                        "description": "Type of sleeper: individual, vehicle or structure",
+                        "type": "string"
+                    },
+                    {
+                        "name": "temp",
+                        "description": "Temperature, if it was written on the source map",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "rain",
+                        "description": "Rain or clear, if it was written on the source map",
+                        "type": "string"
+                    },
+                    {
+                        "name": "geoid",
+                        "description": "Census geoid for the 2010 Census block the observation is in, in ACS format",
+                        "type": "string"
+                    },
+                    {
+                        "name": "x",
+                        "description": "X geographic position, in California State Plane 6, EPSG:2230",
+                        "type": "number"
+                    },
+                    {
+                        "name": "y",
+                        "description": "Y geographic position, in California State Plane 6, EPSG:2230",
+                        "type": "number"
+                    },
+                    {
+                        "name": "geometry",
+                        "description": "Geographic position of observation, in Lat/Lon, EPSG:4326",
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    ]
+}
