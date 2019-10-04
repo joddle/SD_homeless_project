@@ -1,1 +1,15 @@
-# SD_homeless_project
+## Downtown San Diego Homelessness Project
+
+# This is my analysis of the homelessness data set created and released by the San Diego Regional Data Library. The raw data was downloaded from https://www.sandiegodata.org/2019/09/downtown-homeless-data-released/ and has been posted under the Data/ directory.
+
+# The homeless dataset has approximately 41,900 observations containing features: time stamps, temperature, and geographic location (geoid, latitude, longitude, neighborhood) of homeless people for 62 months between 2012 and 2018.
+
+# The MTS dataset collected from the San Diego MTS webpage contains the geographic location of all MTS bus stops in San Diego County.
+
+# The primary research question we want to answer is whether homeless people are more likely to congregate near bus stops, and this research can be extended to other types of public landmarks such as police stations and homeless shelters.
+
+# The approximate polygon of the area surrounding downtown San Diego will allow us to sort busstops that are within a "reasonable" distance from the official border of downtown San Diego. In selecting which MTS bus stops to examine in relation to the proximity of the homeless counted in the data set, I selected bus stops for 4-5 blocks further than the official perimeter of the downtown San Diego area to account for MTS bus stops that might fall outside of the offical downtown San Diego border yet still be in close proximity to the homeless in the data set.
+
+# A heatmap of homeless counts, as well as a time heatmap of homeless counts should provide visual insight into the research question. 
+
+# The metric we will use to do a statistical analysis is the mean of the sum of the inverse of the distance squared between each homeless observation and every MTS bus stop within the 4-5 blocks of the downtown San Diego perimeter. This can be written as: (1/n)∑(1/d^2) where n is the number of MTS bus stops in our analysis, and d is the distance between each homeless observation and all of the MTS bus stops. 
