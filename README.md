@@ -6,10 +6,12 @@
 ###### In order to answer this question, I used the homelessness data set created and released by the San Diego Regional Data Library. The raw data was downloaded from https://www.sandiegodata.org/2019/09/downtown-homeless-data-released/ and has been posted under the SD_homeless_project/sandiegodata.org-dowtown_homeless-8/ directory.
 
 ### The Data Sets
-###### The homeless dataset has approximately 41,900 observations containing features: time stamps, temperature, and geographic location (geoid, latitude, longitude, neighborhood) of homeless people for 62 months between 2012 and 2018. The dictionary for the homeless dataset is provided below.
+###### The homeless dataset has approximately 41,900 observations containing features: time stamps, temperature, and geographic location (geoid, latitude, longitude, neighborhood) of homeless people for 62 months between 2012 and 2018. 
+
+###### The dictionary for the homeless dataset is provided below.
 
 | Column Name   | Data Type     | Description |
-| ------------- |:-------------:| -----:|
+| ------------- | ------------- | ----- |
 | neighborhood  | string        | Neighborhood, from the label on the source map |
 | date          | date          | Date of the observation. Many dates have no day of month; for these dates, the day of month is set to 1 |
 | type          | string        | Type of sleeper: individual, vehicle or structure  |
