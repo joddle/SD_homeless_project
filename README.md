@@ -11,7 +11,7 @@
 ###### The dictionary for the homeless dataset is provided below.
 
 | Column Name   | Data Type     | Description |
-| ------------- | ------------- | ----- |
+|:------------- |:------------- |:----- |
 | neighborhood  | string        | Neighborhood, from the label on the source map |
 | date          | date          | Date of the observation. Many dates have no day of month; for these dates, the day of month is set to 1 |
 | type          | string        | Type of sleeper: individual, vehicle or structure  |
