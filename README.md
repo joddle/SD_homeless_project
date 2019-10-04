@@ -18,4 +18,6 @@
 ### Data Analysis
 ###### A heatmap of homeless counts, as well as a time heatmap of homeless counts should provide visual insight into the research question. 
 
+![alt text](https://github.com/joddle/SD_homeless_project/blob/master/heatmap.png "Heatmap")
+
 ###### The metric we will use to do a statistical analysis is the mean of the sum of the inverse of the distance squared between each homeless observation and every MTS bus stop within the 4-5 blocks of the downtown San Diego perimeter. This can be written as: (1/n)∑(1/d^2) where n is the number of MTS bus stops in our analysis, and d is the distance between each homeless observation and all of the MTS bus stops. 
