@@ -37,6 +37,6 @@
 
 ###### The metric we will use to do a statistical analysis is the mean of the sum of the inverse of the haversine distance between each homeless observation and every MTS bus stop within the 4-5 blocks of the downtown San Diego perimeter. 
 
-###### This can be written as: (1/n)∑(1/d<sub>haversine</sub>(p1,p2)^2) where n is the number of MTS bus stops in our analysis, and d<sub>haversine</sub>(p1,p2) is the haversine distance between each homeless observation and all of the MTS bus stops. The haversine distance between two latitude and longitude points is given by:
+###### This can be written as: (1/n)∑(1/d<sub>hav</sub>(p1,p2)^2) where n is the number of MTS bus stops in our analysis, and d<sub>hav</sub>(p1,p2) is the haversine distance between each homeless observation and all of the MTS bus stops. The haversine distance between two latitude and longitude points is given by:
 
 ![alt text](https://github.com/joddle/SD_homeless_project/blob/master/haversine_distance.png "haversine distance")
