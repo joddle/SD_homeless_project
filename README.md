@@ -28,7 +28,7 @@
 ###### Both datasets were imported as geopandas data types in order to better use the geographical information, make diagrams, and perform statistical analysis.
 
 ### Data Preprocessing 
-###### The approximate polygon of the area surrounding downtown San Diego will allow us to sort busstops that are within a "reasonable" distance from the official border of downtown San Diego. In selecting which MTS bus stops to examine in relation to the proximity of the homeless counted in the data set, I selected bus stops for 4-5 blocks further than the official perimeter of the downtown San Diego area to account for MTS bus stops that might fall outside of the offical downtown San Diego border yet still be in close proximity to the homeless in the data set.
+###### The approximate polygon of the area surrounding downtown San Diego will allow us to sort busstops that are within a "reasonable" proximity to downtown San Diego. I selected MTS bus stops that were 4-5 blocks further than the official perimeter of the downtown San Diego area to account for MTS bus stops that the homeless might congregate near that are close to downtown San Diego but technically not within the perimeter. 
 
 ### Data Analysis
 ###### A heatmap of homeless counts, as well as a time heatmap of homeless counts should provide visual insight into the research question. 
