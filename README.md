@@ -33,7 +33,7 @@
 ### Data Analysis
 ###### A heatmap of homeless counts, as well as a time heatmap of homeless counts should provide visual insight into the research question. 
 
-![alt text](https://github.com/joddle/SD_homeless_project/blob/master/heatmap.png "Heatmap")
+![alt text](https://github.com/joddle/SD_homeless_project/blob/master/heatmap_zoom.png "Heatmap")
 
 ###### In order to determine if the location of homeless people are random relative to the location of the mts bus stops, I simulated a fixed number of data points around each mts bus stop (with a normal distribution given a certain radius and standard deviation) and compared this data set to the observed homeless data set. 
 
