@@ -35,8 +35,9 @@
 
 ![alt text](https://github.com/joddle/SD_homeless_project/blob/master/heatmap.png "Heatmap")
 
-###### The metric we will use to do a statistical analysis is the mean of the sum of the inverse of the haversine distance between each homeless observation and every MTS bus stop within the 4-5 blocks of the downtown San Diego perimeter. 
+###### In order to determine if the location of homeless people are random relative to the location of the mts bus stops, I simulated a fixed number of data points around each mts bus stop (with a normal distribution given a certain radius and standard deviation) and compared this data set to the observed homeless data set. 
 
-###### This can be written as: (1/n)∑(1/d<sub>hav</sub>(φ<sub>1</sub>,φ<sub>2</sub>,λ<sub>1</sub>,λ<sub>2</sub>)) where n is the number of MTS bus stops in our analysis, and d<sub>hav</sub>(φ<sub>1</sub>,φ<sub>2</sub>,λ<sub>1</sub>,λ<sub>2</sub>) is the haversine distance between each homeless observation and all of the MTS bus stops where φ<sub>1</sub>, φ<sub>2</sub> are the latitude of points 1, 2, and λ<sub>1</sub>,λ<sub>2</sub> are the longitude of points 1,2 where point 1 corresponds to a homeless observation and point 2 corresponds to an MTS bus stop. The haversine distance between two latitude and longitude points is given by:
+###### The heatmap of the simulated data set shows a clear relationship to the mts bus stops. 
+![alt text](https://github.com/joddle/SD_homeless_project/blob/master/simulated_heatmap.png "Heatmap")
 
-![alt text](https://github.com/joddle/SD_homeless_project/blob/master/haversine_distance.png "haversine distance")
+###### Then a test of statistical signifiance was carried out between the two data sets. 
