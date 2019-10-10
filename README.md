@@ -37,7 +37,7 @@
 
 ###### In order to determine if the location of homeless people are random relative to the location of the mts bus stops, I simulated a fixed number of data points around each mts bus stop (with a normal distribution given a certain radius and standard deviation) and compared this data set to the observed homeless data set. 
 
-###### The heatmap of the simulated data set shows a clear relationship to the mts bus stops. 
+###### The heatmap of the simulated data set shows a strong relationship to the mts bus stops. 
 ![alt text](https://github.com/joddle/SD_homeless_project/blob/master/simulated_heatmap.png "Heatmap")
 
-###### Then a test of statistical signifiance was carried out between the two data sets. 
+###### Then a statistical signifiance test was carried out between the two data sets by comparing the distrution of ANNs (average nearest neighbors) between N = 1000 simulations and the ANN of the observed data set. The p-value is the proportion of ANN values from the simulations that lie above the single ANN value for the observed data set. 
