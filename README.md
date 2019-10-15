@@ -38,8 +38,8 @@
 ###### In order to determine if the location of homeless people are random relative to the location of the mts bus stops, I simulated a fixed number of data points around each mts bus stop, taking the assumption that the majority of homeless people (95% or 2 standard deviations) would be found a 5 minute walk = 400 meters from each stop).
 
 ###### The heatmap of the simulated data set shows a strong relationship to the mts bus stops. 
-![alt text](https://github.com/joddle/SD_homeless_project/blob/master/heatmap_simulation_diag.png "Heatmap")
+![alt text](https://github.com/joddle/SD_homeless_project/blob/master/heatmap_simulation_diag.png "Heatmap" width=100)
 
 ###### A statistical signifiance test was carried out between the two data sets (simulated versus observed) by comparing the distrution of ANNs (average nearest neighbors) from each point to the MTS stops. The ANN value is calculated by summing up the average distance between each point and all of the MTS stops, summing these average distances over all points in the data set, and then dividing by the number of data points. Lower ANN values indicate more clustering around MTS stops, and higher ANN values indicate less clustering around MTS stops.
 
-###### Running N = 100 simulation, calculating the ANNs for each simulation, allows us to plot a histogram of the simulated ANN values. We then compare single ANN value from the observed data set to the distribution of ANN values for the N = 100 simulations, and the p-value is the proportion of ANN values from the simulations that lie above the single ANN value for the observed data set. 
+###### Running N = 100 simulations and calculating the ANN for each simulation, allows us to plot a histogram of the simulated ANN values. We then compare single ANN value from the observed data set to the distribution of ANN values for the N = 100 simulations, and the p-value is the proportion of ANN values from the simulations that lie above the single ANN value for the observed data set. 
