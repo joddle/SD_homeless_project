@@ -39,7 +39,7 @@
 
 ###### I analyzed the relative density of each reference point (bus stop) by counting up the number of observations lying within 2 standard deviations of each stop, and dividing through the total number of observations. This number includes overlaps, but considering that overlaps can be counted by multiple stops, I decided this effect was negligible. (This can be fine-tuned). I then used these relative density values of each reference point to determine how many points to simulate for this reference point (e.g. If there are two reference points, P1 and P2, and there are 4 observations near P1, and 6 observations near P2, and we want to generate 1000 simulated points total, the relative densities of the reference points are P1 = 0.4, P2 = 0.6, and 400 points will be generated around P1, and 600 points will be generated around P2)
 
-###### The heatmap of the simulated data set shows a strong relationship to the mts bus stops. 
+###### The heatmap of the simulated data set (N = 10000) shows a strong relationship to the mts bus stops, as expected. 
 ![alt text](https://github.com/joddle/SD_homeless_project/blob/master/heatmap_simulation_diag_v2.png "Simulated Heatmap")
 
 ###### A statistical signifiance test was carried out between the two data sets (simulated versus observed) by comparing the distrution of ANNs (average nearest neighbors) from each point to the MTS stops. The ANN value is calculated by summing up the average distance between each point and all of the MTS stops, summing these average distances over all points in the data set, and then dividing by the number of data points. Lower ANN values indicate more clustering around MTS stops, and higher ANN values indicate less clustering around MTS stops.
