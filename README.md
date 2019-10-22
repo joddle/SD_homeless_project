@@ -35,7 +35,9 @@
 
 ![alt text](https://github.com/joddle/SD_homeless_project/blob/master/heatmap_zoom.png "Heatmap")
 
-###### In order to determine if the location of homeless people are random relative to the location of the mts bus stops, I simulated a fixed number of data points around each mts bus stop, taking the assumption that the majority of homeless people (95% or 2 standard deviations) would be found a 5 minute walk = 400 meters from each stop).
+###### In order to determine if the location of homeless people are random relative to the location of the mts bus stops, I simulated data points around each mts bus stop, taking the assumption that the majority of homeless people (95% or 2 standard deviations) would be found a 5 minute walk = 400 meters from each stop). 
+
+###### I analyzed the relative density of each reference point (bus stop) by counting up the number of observations lying within 2 standard deviations of each stop, and dividing through the total number of observations. This number includes overlaps, but considering that overlaps can be counted by multiple stops, I decided this effect was negligible. (This can be fine-tuned). I then used these relative density values of each reference point to determine how many points to simulate for this reference point (e.g. If there are two reference points, P1 and P2, and there are 4 observations near P1, and 6 observations near P2, and we want to generate 1000 simulated points total, the relative densities of the reference points are P1 = 0.4, P2 = 0.6, and 400 points will be generated around P1, and 600 points will be generated around P2)
 
 ###### The heatmap of the simulated data set shows a strong relationship to the mts bus stops. 
 ![alt text](https://github.com/joddle/SD_homeless_project/blob/master/heatmap_simulation_diag_v2.png "Simulated Heatmap")
