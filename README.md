@@ -51,3 +51,7 @@
 
 ### Final Step: Ground-Truth Hypothesis Test
 ###### The final step for this project would be a ground-truth test to demonstrate the effectiveness of this method: simulating ANNs and comparing it to an observed ANN. We will use reference points with a *known statistical significance* for a population (i.e. homeless population with parks as reference points) are run through the same data analysis method. The expected result is that the single ANN value falls into a statistically significant range of the simulated ANNs. 
+
+### References:
+###### [1] ARCGis Pro. “How Average Nearest Neighbor Works”. Retrieved from: https://pro.arcgis.com/en/pro-app/tool-reference/spatial-statistics/h-how-average-nearest-neighbor-distance-spatial-st.htm \ [2] Gimond, M. “Hypothesis Testing”. Aug 2019. Retrieved from: https://mgimond.github.io/Spatial/hypothesis-testing.html#alternatives-to-csrirp \ [3] Mitchell, Andy. The ESRI Guide to GIS Analysis, Volume 2. ESRI Press, 2005.
+
