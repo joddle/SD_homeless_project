@@ -1,7 +1,7 @@
 ## Downtown San Diego Homelessness Project
 
 ### The Research Question
-###### The primary research question we want to answer is whether homeless people are more likely to congregate near bus stops, and this research can be extended to other types of public landmarks such as police stations and homeless shelters.
+###### The primary research question we want to answer is whether the homeless are near bus stops at a statistically significant level, and this research can be extended to other types of reference points (like other public landmarks such as police stations and homeless shelters).
 
 ###### In order to answer this question, I used the homelessness data set created and released by the San Diego Regional Data Library. The raw data was downloaded from https://www.sandiegodata.org/2019/09/downtown-homeless-data-released/ and has been posted under the SD_homeless_project/sandiegodata.org-dowtown_homeless-8/ directory.
 
@@ -42,9 +42,9 @@
 ###### The heatmap of the simulated data set (N = 10000) shows a strong relationship to the mts bus stops, as expected. 
 ![alt text](https://github.com/joddle/SD_homeless_project/blob/master/heatmap_simulation_diag_v2.png "Simulated Heatmap")
 
-###### A statistical signifiance test was carried out between the two data sets (simulated versus observed) by comparing the distrution of ANNs (average nearest neighbors) from each point to the MTS stops. The ANN value is calculated by summing up the average distance between each point and all of the MTS stops, summing these average distances over all points in the data set, and then dividing by the number of data points. Lower ANN values indicate more clustering around MTS stops, and higher ANN values indicate less clustering around MTS stops.
+###### A statistical signifiance test was carried out between the two data sets (simulated versus observed) by comparing the distrution of ANNs (average nearest neighbors) from each point to the MTS stops. The ANN value is calculated by summing up the average distance between each point and all of the MTS stops, summing these average distances over all points in the data set, and then dividing by the number of data points [1]. Lower ANN values indicate more clustering around MTS stops, and higher ANN values indicate less clustering around MTS stops [2].
 
-###### Running N = 100 simulations and calculating the ANN for each simulation, allows us to plot a histogram of the simulated ANN values. We then compare single ANN value from the observed data set to the distribution of ANN values for the N = 100 simulations, and the p-value is the proportion of ANN values from the simulations that lie above the single ANN value for the observed data set. 
+###### Running N = 100 simulations and calculating the ANN for each simulation, allows us to plot a histogram of the simulated ANN values. We then compare single ANN value from the observed data set to the distribution of ANN values for the N = 100 simulations, and the p-value is the proportion of ANN values from the simulations that lie above the single ANN value for the observed data set [2]. 
 
 ###### In analyzing the homeless population relative to MTS bus stop reference points, and running N = 100 simulations and calculating the ANNs for a hypothetical population closely distributed around the MTS bus stops, we can see that the observed homeless population is significantly less clustered around the MTS bus stops than compared to the simulated homeless population (p-value ≈ 1). 
 ![alt text](https://github.com/joddle/SD_homelessness_project/blob/master/simulated_vs_observed_ANN.png "Simulated_vs_observed_ANN")
