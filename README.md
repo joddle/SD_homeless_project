@@ -46,7 +46,7 @@
 
 ###### Running N = 100 simulations and calculating the ANN for each simulation, allows us to plot a histogram of the simulated ANN values. We then compare single ANN value from the observed data set to the distribution of ANN values for the N = 100 simulations, and the p-value is the proportion of ANN values from the simulations that lie above the single ANN value for the observed data set. 
 
-###### In analyzing the homeless population relative to MTS bus stop reference points, and running N = 100 simulations and calculating the ANNs for a hypothetical population closely distributed around the MTS bus stops, we can see that the observed homeless population is significantly less clustered around the MTS bus stops than compared to the simulated homeless population (p-value ≈ 0.00). 
+###### In analyzing the homeless population relative to MTS bus stop reference points, and running N = 100 simulations and calculating the ANNs for a hypothetical population closely distributed around the MTS bus stops, we can see that the observed homeless population is significantly less clustered around the MTS bus stops than compared to the simulated homeless population (p-value ≈ 1). 
 ![alt text](https://github.com/joddle/SD_homelessness_project/blob/master/simulated_vs_observed_ANN.png "Simulated_vs_observed_ANN")
 
 ### Final Step: Ground-Truth Hypothesis Test
