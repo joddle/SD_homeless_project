@@ -1,7 +1,7 @@
 ## Downtown San Diego Homelessness Project
 
 ### The Research Question
-###### The primary research question we want to answer is whether the homeless are near bus stops at a statistically significant level, and this research can be extended to other types of reference points (like other public landmarks such as police stations and homeless shelters).
+###### We want to determine whether there is a statistically significant correlation between the spatial distribution of the homeless population and different types of reference points. For example, can we determine if the homeless population are near bus stops, police stations, parks, or homeless shelters? The first type of reference point we checked were MTS bus stops in the downtown San Diego area.
 
 ###### In order to answer this question, I used the homelessness data set created and released by the San Diego Regional Data Library. The raw data was downloaded from https://www.sandiegodata.org/2019/09/downtown-homeless-data-released/ and has been posted under the SD_homeless_project/sandiegodata.org-dowtown_homeless-8/ directory.
 
