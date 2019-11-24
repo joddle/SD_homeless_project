@@ -23,9 +23,9 @@
 | geometry      | string        | Geographic position of observation, in Lat/Lon, EPSG:4326 |
 
 
-###### The MTS dataset collected from the San Diego MTS webpage contains the geographic location of all MTS bus stops in San Diego County.
+###### The MTS dataset collected from the San Diego MTS webpage: https://www.sdmts.com/google_transit_files/google_transit.zip contains the geographic location of all MTS bus stops in San Diego County. The geographic locations of parks in San Diego was collected from: https://data.sandiego.gov/datasets/park-locations/
 
-###### Both datasets were imported as geopandas data types in order to better use the geographical information, make diagrams, and perform statistical analysis.
+###### All of the datasets were imported as geopandas data types in order to better use the geographical information, make diagrams, and perform statistical analysis.
 
 ### Data Preprocessing 
 ###### The approximate polygon of the area surrounding downtown San Diego will allow us to sort busstops that are within a "reasonable" proximity to downtown San Diego. I selected MTS bus stops that were 4-5 blocks further than the official perimeter of the downtown San Diego area to account for MTS bus stops that the homeless might congregate near that are close to downtown San Diego but technically not within the perimeter. 
