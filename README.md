@@ -1,7 +1,7 @@
 ## Downtown San Diego Homelessness Project
 
 ### The Research Question
-###### We want to determine whether there is a statistically significant correlation between the spatial distribution of the homeless population and different types of reference points. For example, can we determine if the homeless population cluster around bus stops, police stations, parks, or homeless shelters with more than a random correlation? The first type of reference point we checked were MTS bus stops in the downtown San Diego area.
+###### We want to determine whether there is a statistically significant correlation between the spatial distribution of the homeless population and different types of reference points. For example, can we determine if the homeless population cluster around bus stops, police stations, parks, or homeless shelters by more than random chance? The first type of reference point I checked were MTS bus stops in the downtown San Diego area.
 
 ###### In order to answer this question, I used the homelessness data set created and released by the San Diego Regional Data Library. The raw data was downloaded from https://www.sandiegodata.org/2019/09/downtown-homeless-data-released/ and has been posted under the SD_homeless_project/sandiegodata.org-dowtown_homeless-8/ directory.
 
